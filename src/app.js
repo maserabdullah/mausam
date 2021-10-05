@@ -71,7 +71,7 @@ app.get('/weather', (req, res) => {
 })
 
 
-
-app.listen(3000, () => {
-    console.log('Server is up on port 3000.')
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log(`Server is up on port ${port}.`)
 })
